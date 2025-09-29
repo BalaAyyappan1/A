@@ -1,3 +1,5 @@
+import { KandamImage } from "../components/ReUsable/Images"
+
 export const Kandams = [
     {
         no:'Kandam No: 1',

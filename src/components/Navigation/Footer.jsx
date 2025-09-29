@@ -8,6 +8,14 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { GrMail } from "react-icons/gr";
 import { PiClockFill } from "react-icons/pi";
 import Align from '../ReUsable/Align';
+import { FacebookIcon, YoutubeIcon, InstagramIcon } from '../ReUsable/Images';
+
+
+const Socials = [
+  {link:'#', icon: FacebookIcon,},
+  {link:'#', icon: YoutubeIcon,},
+  {link:'#', icon: InstagramIcon  ,},
+]
 
 const Footer = () => {
     const currentYear = new Date().getFullYear()
@@ -62,16 +70,16 @@ const Footer = () => {
     <div className='bg-[#F8F2DE] flex flex-row items-center justify-center py-8 sm:py-10 md:py-12 lg:py-16'>
       <Align className='w-full px-4 sm:px-6 lg:px-8'>
         <motion.div 
-          className='grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-12 xl:gap-16'
+          className='grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-10 lg:gap-12 xl:gap-16'
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
           
-          {/* Company Info Column */}
+          {/* Company Info Column - 35% width on large screens */}
           <motion.div 
-            className='flex flex-col space-y-4 lg:space-y-6'
+            className='flex flex-col space-y-4 lg:space-y-6 lg:col-span-4'
             variants={itemVariants}
           >
             <motion.img 
@@ -95,11 +103,35 @@ const Footer = () => {
             >
               Book Appointment
             </motion.button>
+
+           <motion.div>
+  {Socials.map((social, index) => (
+    <a
+      key={index}
+      href={social.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block mr-4 last:mr-0 hover:opacity-80 transition-opacity"
+    >
+      <motion.img
+        src={social.icon}
+        alt="icons"
+        className="w-10 h-10"
+        whileHover={{ scale: 1.2 }}
+        transition={{ duration: 0.3 }}
+      />
+    </a>
+  ))}
+</motion.div>
+
+
+
+
           </motion.div>
           
-          {/* Navigation Links Column */}
+          {/* Navigation Links Column - 20% width on large screens */}
           <motion.div 
-            className='flex flex-col space-y-4 lg:space-y-6'
+            className='flex flex-col space-y-4 lg:space-y-6 lg:col-span-3'
             variants={itemVariants}
           >
             <motion.h1 
@@ -127,9 +159,9 @@ const Footer = () => {
             </motion.div>
           </motion.div>
           
-          {/* Contact Information Column */}
+          {/* Contact Information Column - 45% width on large screens */}
           <motion.div 
-            className='flex flex-col space-y-4 sm:space-y-6'
+            className='flex flex-col space-y-4 sm:space-y-6 lg:col-span-5'
             variants={itemVariants}
           >
             <motion.h1 

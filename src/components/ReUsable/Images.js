@@ -11,12 +11,21 @@ export {default as People3} from '../../assets/Home/People/client3.png';
 
 
 // Services page
+
+//Small frame
+export {default as ServiceSFrame} from '../../assets/Service/bgfames2.png';
+export {default as ServiceMFrame} from '../../assets/Service/bgframemobileService.png';
+export {default as Pic1} from '../../assets/Service/servicePic1.png';
+export {default as Pic2} from '../../assets/Service/servicePic2.png';
+
 // Kandam 
 export {default as KandamImage} from '../../assets/Service/kandam.png';
 
 
 // About page
 export {default as AboutHero} from '../../assets/About/aboutHero.png';
+export {default as AboutMobileHero} from '../../assets/About/aboutMobileHero.png';
+
 export {default as NadiImage} from '../../assets/About/naadi.png';
 export {default as HistoryImage} from '../../assets/About/history.png';
 export {default as LegacyImage} from '../../assets/About/legacy.png';
@@ -47,6 +56,12 @@ export {default as Gallery8} from '../../assets/About/gallery8.png';
 
 
 // Poojas page
+export {default as PoojaHero} from '../../assets/Poojas/poojaHero.png';
+export {default as PoojaMobileHero} from '../../assets/Poojas/mobileHero.png';
+
+export {default as PoojaImage} from '../../assets/Poojas/pooja.png';
+export {default as PoojaBanner} from '../../assets/Poojas/bgFrame.png';
+
 export {default as PoojaImage1} from '../../assets/Poojas/img1.png';
 export {default as PoojaImage2} from '../../assets/Poojas/img2.png';
 export {default as PoojaImage3} from '../../assets/Poojas/img3.png';
@@ -71,3 +86,11 @@ export {default as PoojaImage21} from '../../assets/Poojas/img21.png';
 export {default as PoojaImage22} from '../../assets/Poojas/img22.png';
 export {default as PoojaImage23} from '../../assets/Poojas/img23.png';
 export {default as PoojaImage24} from '../../assets/Poojas/img24.png';
+
+
+
+
+//Footer social icons
+export {default as FacebookIcon} from '../../assets/Footer/Facebook.png';
+export {default as YoutubeIcon} from '../../assets/Footer/YouTube.png';
+export {default as InstagramIcon} from '../../assets/Footer/Instagram.png';

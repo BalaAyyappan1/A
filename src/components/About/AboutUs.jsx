@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import SectionHeader from "../ReUsable/SectionHeader";
 import { NadiImage, HistoryImage, LegacyImage } from "../ReUsable/Images";
 import Align from "../ReUsable/Align";
@@ -26,47 +27,55 @@ const content = [
 
 const About = () => {
   return (
-    <Align>
-      <SectionHeader title="About Us" />
+    <div className="md:py-20 py-10">
+      <Align>
+        <SectionHeader title="About Us" />
 
-      <section className="space-y-6 sm:space-y-8 lg:space-y-10">
-        {content.map((item, index) => (
-          <div key={index} className="w-full">
-            {/* Fixed heading alignment and responsive styling */}
-            <div className="bg-[#49000B] text-[#FFE177] flex items-center justify-center font-heading h-12 sm:h-[47px] rounded-xl">
-              <h2 className="text-base sm:text-lg md:text-xl font-semibold px-4 text-center">
-                {item.title}
-              </h2>
-            </div>
-
-            {/* Responsive layout with 50/50 split on large screens */}
-            <div
-              className={`p-4 sm:p-6 flex flex-col-reverse gap-4 sm:gap-6 
-                lg:flex-row lg:items-center lg:gap-8 
-                ${index === 1 ? "lg:flex-row-reverse" : ""} 
-                bg-[#FFE177] rounded-[10px]`}
+        <section className="space-y-6 sm:space-y-8 lg:space-y-10">
+          {content.map((item, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="w-full"
             >
-              {/* Text content - 50% on large screens */}
-              <div className="flex-1 lg:flex-[1] order-2 lg:order-none">
-                <p className="text-sm sm:text-base md:text-start text-center  leading-relaxed font-heading text-black">
-                  {item.content}
-                </p>
+              {/* Title */}
+              <div className="bg-[#49000B] text-[#FFE177] flex items-center justify-center font-heading h-12 sm:h-[47px] rounded-xl">
+                <h2 className="text-base sm:text-lg md:text-xl font-semibold px-4 text-center">
+                  {item.title}
+                </h2>
               </div>
 
-              {/* Image - 50% on large screens */}
-              <div className="flex-shrink order-1 lg:order-none w-full lg:flex-[1]">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="md:w-full w-100 sm:h-100 lg:h-72 xl:h-92 object-contain rounded-xl"
-                />
-              </div>
+              {/* Content & Image */}
+              <div
+                className={`p-4 sm:p-6 flex flex-col-reverse gap-4 sm:gap-6 
+                  lg:flex-row lg:items-center lg:gap-8 
+                  ${index === 1 ? "lg:flex-row-reverse" : ""} 
+                  bg-[#FFE177] rounded-[10px]`}
+              >
+                {/* Text */}
+                <div className="flex-1 lg:flex-[1] order-2 lg:order-none">
+                  <p className="text-sm sm:text-base md:text-start text-center leading-relaxed font-heading text-black">
+                    {item.content}
+                  </p>
+                </div>
 
-            </div>
-          </div>
-        ))}
-      </section>
-    </Align>
+                {/* Image */}
+                <div className="flex-shrink order-1 lg:order-none w-full lg:flex-[1]">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="md:w-full w-100 sm:h-100 lg:h-72 xl:h-92 object-contain rounded-xl"
+                  />
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </section>
+      </Align>
+    </div>
   );
 };
 
