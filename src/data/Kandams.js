@@ -1,4 +1,4 @@
-import { KandamImage } from "../components/ReUsable/Images"
+import { KandamImage, SplKandamImage } from "../components/ReUsable/Images"
 
 export const Kandams = [
     {
@@ -87,7 +87,7 @@ export const Kandams = [
     },
       {
         no:'Kandam No: 15',
-        image:KandamImage,
+        image:SplKandamImage,
         title:'Disha bukthi Kandam',
         desc:"1. Disha Bukthi Shanthi Parihara Kandam – Remedies for overall welfare of life. 2.Disha Bukthi Dheeksha Mantra Kandam – Guidance on divine mantra chanting methods, duration, Yantra worship, and details of who should perform them."
     },

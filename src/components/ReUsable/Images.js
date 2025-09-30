@@ -19,7 +19,24 @@ export {default as Pic1} from '../../assets/Service/servicePic1.png';
 export {default as Pic2} from '../../assets/Service/servicePic2.png';
 
 // Kandam 
+export {default as KandamHero} from '../../assets/Service/Kandam/KandamHero.png';
+export {default as KandamHeroM} from '../../assets/Service/Kandam/KandamHeroM.png';
+
 export {default as KandamImage} from '../../assets/Service/kandam.png';
+export {default as SplKandamImage} from '../../assets/Service/Kandam/splKandam.png';
+export {default as BGFrmaeD} from '../../assets/Service/Kandam/bgFrameService.png';
+export {default as BGFrmaeM} from '../../assets/Service/Kandam/bgFrameSeriveMobile.png';
+export {default as Thiru} from '../../assets/Service/Kandam/thiru.png';
+export {default as TopL} from '../../assets/Service/TopL.png';
+export {default as BotL} from '../../assets/Service/BotL.png';
+export {default as BottomLastImage} from '../../assets/Service/serv2bf.png';
+
+// Online
+export {default as OnlineHero} from '../../assets/Service/Online/OnlineHero.png';
+export {default as OnlineHeroM} from '../../assets/Service/Online/OnlineHeroM.png';
+export {default as Thumb} from '../../assets/Service/Online/thumb.png';
+
+
 
 
 // About page
