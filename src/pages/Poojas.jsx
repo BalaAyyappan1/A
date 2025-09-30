@@ -5,6 +5,8 @@ import Homam from '../components/Poojas/Homam'
 const Poojas = () => {
   return (
     <div>
+       <div className="md:h-[80px] h-[40px]"></div>
+
       <div className="relative">
         <img src={PoojaHero} alt="Poojas" className="w-full h-full md:block hidden" />
         <img src={PoojaMobileHero} alt="Poojas" className="w-full h-[70dvh] md:hidden" />
