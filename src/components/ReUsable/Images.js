@@ -106,6 +106,16 @@ export {default as PoojaImage24} from '../../assets/Poojas/img24.png';
 
 
 
+//Contact 
+export {default as BGCFrame} from '../../assets/Contact/contactbg.png'
+
+//Payment
+export {default as PayHero} from "../../assets/Payment/PayHero.png"
+export {default as PayMobileHero} from "../../assets/Payment/PayHeroMobile.png"
+export {default as PayFrame} from "../../assets/Payment/paybfframe.png"
+export{default as Award} from "../../assets/Payment/award.png"
+export {default as Arul} from "../../assets/Payment/arul.png"
+
 
 //Footer social icons
 export {default as FacebookIcon} from '../../assets/Footer/Facebook.png';
