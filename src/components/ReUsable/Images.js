@@ -3,6 +3,46 @@ export {default as CompanyLogo} from '../../assets/companyLogo.png';
 export {default as BoxIcon} from '../../assets/Icon.png';
 
 
+export {default as HeroHome} from '../../assets/Home/HomeHero.png'; 
+export {default as HeroHomeM} from '../../assets/Home/HomeHeroM.png'; 
+
+export {default as WhatsappIcon} from '../../assets/whatsapp.png';
+export {default as TopF} from '../../assets/Home/topF.png'
+
+//HWy
+export {default as WhyTBG} from '../../assets/Home/Why/sideFrameh.png'
+export {default as WhyTBG1} from '../../assets/Home/Why/sideFrameh1.png'
+export {default as Image1} from '../../assets/Home/Why/imgh1.png';
+export {default as Image2} from '../../assets/Home/Why/imgh2.png';
+export {default as Vanak} from '../../assets/Home/Why/vank.png';
+
+export {default as Sachi} from '../../assets/Home/Why/sachi.png';
+
+// Tradiiton
+export {default as T1} from '../../assets/Home/Tradition/t1.png';
+export {default as T2} from '../../assets/Home/Tradition/t2.png';
+export {default as T3} from '../../assets/Home/Tradition/t3.png';
+export {default as T4} from '../../assets/Home/Tradition/t4.png';
+
+// Service
+export {default as S2} from '../../assets/Home/Service/s2.png';
+export {default as S1} from '../../assets/Home/Service/s1.png';
+export {default as S3} from '../../assets/Home/Service/s3.png';
+export {default as S4} from '../../assets/Home/Service/s4.png';
+export {default as S5} from '../../assets/Home/Service/s5.png';
+
+// Blogs
+
+export {default as B1} from '../../assets/Home/Blogs/b1.png';
+export {default as B2} from '../../assets/Home/Blogs/b2.png';
+export {default as B3} from '../../assets/Home/Blogs/b3.png';
+
+
+
+export {default as TadBg} from'../../assets/Home/People/bgTrad.png'
+
+export {default as Frame } from '../../assets/Home/Tradition/f.png'
+
 // People
 export {default as PeopleBg} from '../../assets/Home/People/bgPeople.png';
 export {default as People1} from '../../assets/Home/People/client1.png';
@@ -37,7 +77,7 @@ export {default as OnlineHeroM} from '../../assets/Service/Online/OnlineHeroM.pn
 export {default as Thumb} from '../../assets/Service/Online/thumb.png';
 
 
-
+export {default as Quotes} from '../../assets/Home/quotes.png'
 
 // About page
 export {default as AboutHero} from '../../assets/About/aboutHero.png';
